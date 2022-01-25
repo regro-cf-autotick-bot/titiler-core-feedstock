@@ -1,5 +1,5 @@
 {% set name = "titiler-core" %}
-{% set version = "0.3.12" %}
+{% set version = "0.4.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/titiler.core-{{ version }}.tar.gz
-  sha256: d40c1f190f2631261723c7a01608e200961c419c4823e9adf867f1c111e4f200
+  sha256: 3059fd8073c7789ac892e4d58ea88161629ab76653ba4c3726d5bb8abe209b01
 
 build:
   number: 0
