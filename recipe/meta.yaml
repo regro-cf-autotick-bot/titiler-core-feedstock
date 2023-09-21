@@ -1,5 +1,5 @@
 {% set name = "titiler-core" %}
-{% set version = "0.3.12" %}
+{% set version = "0.14.1" %}
 
 
 package:
@@ -18,23 +18,19 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - async-exit-stack >=1.0.1,<2.0.0
-    - async_generator >=1.10,<2.0.0
-    - dataclasses
-    - fastapi >=0.65,<0.68
-    - geojson-pydantic
-    - importlib_resources >=1.1.0
-    - jinja2 >=2.11.2,<3.0.0
-    - morecantile <3.0.0
+    - fastapi>=0.100.0
+    - geojson-pydantic>=1.0,<2.0
+    - jinja2>=2.11.2,<4.0.0
     - numpy
-    - pydantic
-    - python >=3.6
+    - pydantic~=2.0
     - rasterio
-    - rio-tiler >=2.1,<2.2
+    - rio-tiler>=6.0,<7.0
+    - morecantile>=5.0,<6.0
     - simplejson
-
+    - typing_extensions>=4.6.1
+    - python >=3.8
 test:
   imports:
     - titiler
