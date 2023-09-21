@@ -17,6 +17,7 @@ build:
 
 requirements:
   host:
+    - pdm-pep517
     - pip
     - python >=3.8
   run:
