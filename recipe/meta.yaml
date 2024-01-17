@@ -1,5 +1,5 @@
 {% set name = "titiler-core" %}
-{% set version = "0.16.1" %}
+{% set version = "0.17.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/titiler.core-{{ version }}.tar.gz
-  sha256: f5bb12b60eb383a4af6cc49aa8433c2eee0c03369632b5a8d39ac155612fc0b5
+  sha256: decef6db22e257cb5c3490fc93d39e201536f2b2d54f59277ff201f492f72fed
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - numpy
     - pydantic >=2.0,<3.dev0
     - rasterio
-    - rio-tiler >=6.2.5,<7.0
+    - rio-tiler >=6.3.0,<7.0
     - morecantile >=5.0,<6.0
     - simplejson
     - typing_extensions >=4.6.1
