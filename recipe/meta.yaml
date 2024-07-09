@@ -1,5 +1,5 @@
 {% set name = "titiler-core" %}
-{% set version = "0.18.0" %}
+{% set version = "0.18.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/titiler.core-{{ version }}.tar.gz
-  sha256: 0c1a2f22b54bd04e23191913148e9fc356a18613483d92ec6d6909a35695b7ff
+  sha256: d12e58afc7ed406bfb8bd5099633fa07eb8d23d5d2be3a8d162da2cc90e273a6
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - fastapi-slim >=0.111.0
     - fastapi >=0.107.0
     - geojson-pydantic >=1.0,<2.0
     - jinja2 >=2.11.2,<4.0.0
