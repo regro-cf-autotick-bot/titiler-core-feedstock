@@ -1,5 +1,5 @@
 {% set name = "titiler-core" %}
-{% set version = "0.18.6" %}
+{% set version = "0.19.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/titiler.core-{{ version }}.tar.gz
-  sha256: 63d0c64b7dfdd0b9a09db275bcc771ac9c7b28717ec477e4257778002ff53cb6
+  sha256: c0e714cd920966e212b3a77a28d1d770335c3f866a79ab28afe2cf4bb659529f
 
 build:
   number: 0
@@ -22,13 +22,13 @@ requirements:
     - python >=3.8
   run:
     - fastapi >=0.108.0
-    - geojson-pydantic >=1.0,<2.0
+    - geojson-pydantic >=1.1.2,<2.0
     - jinja2 >=2.11.2,<4.0.0
     - numpy
     - pydantic >=2.0,<3.dev0
     - rasterio
-    - rio-tiler >=6.3.0,<7.0
-    - morecantile >=5.0,<6.0
+    - rio-tiler >=7.0,<8.0
+    - morecantile
     - simplejson
     - typing_extensions >=4.6.1
     - python >=3.8
